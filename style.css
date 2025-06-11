@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.topics {
+  display: none; /* Hide topics initially */
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.subject-btn {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 4px;
+}
+
+.subject-btn:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
