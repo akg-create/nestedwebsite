@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nested Menu Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Subjects</h1>
+  <nav id="subjects">
+    <ul>
+      <li>
+        <button class="subject-btn" data-subject="astronomy">Astronomy</button>
+        <ul class="topics" id="astronomy-topics">
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="stars.html">Stars</a></li>
+          <li><a href="galaxies.html">Galaxies</a></li>
+          <li><a href="blackholes.html">Blackholes</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="subject-btn" data-subject="animals">Animals</button>
+        <ul class="topics" id="animal-topics">
+          <li><a href="mammals.html">Mammals</a></li>
+          <li><a href="birds.html">Birds</a></li>
+          <li><a href="reptiles.html">Reptiles</a></li>
+          <li><a href="marine.html">Marine Animals</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="subject-btn" data-subject="cooking">Cooking</button>
+        <ul class="topics" id="cooking-topics">
+          <li><a href="baking.html">Baking</a></li>
+          <li><a href="grilling.html">Grilling</a></li>
+          <li><a href="soups.html">Soups</a></li>
+          <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
