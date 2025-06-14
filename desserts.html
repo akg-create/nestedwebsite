@@ -11,6 +11,14 @@
   <p>Desserts are sweet courses typically served at the end of a meal, such as cakes, cookies, and ice cream.</p>
   <img src="media/desserts.jpg" alt="Desserts" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
