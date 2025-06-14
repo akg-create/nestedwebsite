@@ -1,33 +1,27 @@
-function resetHomepageView() {
-  const topicsLists = document.querySelectorAll('.topics');
-  const subjectButtons = document.querySelectorAll('.subject-btn');
-
-  // Hide all topic lists
-  topicsLists.forEach(list => list.style.display = 'none');
-
-  // Show subject buttons (optional, in case you hide them elsewhere)
-  subjectButtons.forEach(btn => btn.style.display = 'inline-block');
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Reset view on load
-  resetHomepageView();
+  const subjectButtons = document.querySelectorAll('.subject-btn');
+  const topicLists = document.querySelectorAll('.topics');
 
-  const buttons = document.querySelectorAll('.subject-btn');
-  const topicsLists = document.querySelectorAll('.topics');
+  // Hide all topic lists initially
+  topicLists.forEach(list => list.style.display = 'none');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const subject = btn.getAttribute('data-subject');
+  // Add click event to each subject button
+  subjectButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const subject = button.getAttribute('data-subject');
 
-      // Hide all topics
-      topicsLists.forEach(list => list.style.display = 'none');
+      // Hide all topic lists
+      topicLists.forEach(list => list.style.display = 'none');
 
-      // Show selected
+      // Show the selected topic list
       const selectedList = document.getElementById(`${subject}-topics`);
       if (selectedList) {
         selectedList.style.display = 'block';
+      } else {
+        console.warn(`No topic list found for subject: ${subject}`);
       }
     });
   });
+
+  console.log('script.js initialized');
 });
