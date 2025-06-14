@@ -11,6 +11,14 @@
   <p>Galaxies are massive systems of stars, stellar remnants, gas, dust, and dark matter bound by gravity.</p>
   <img src="media/galaxies.jpg" alt="Galaxies" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
