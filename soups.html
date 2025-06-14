@@ -11,6 +11,14 @@
   <p>Soups are primarily liquid food, generally served warm or hot, made by combining ingredients such as meat and vegetables.</p>
   <img src="media/soups.jpg" alt="Soups" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
