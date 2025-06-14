@@ -11,6 +11,14 @@
   <p>Mammals are warm-blooded vertebrates characterized by hair and mammary glands that produce milk.</p>
   <img src="media/mammals.jpg" alt="Mammals" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+ <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
