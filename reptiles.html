@@ -11,6 +11,14 @@
   <p>Reptiles are cold-blooded vertebrates including snakes, lizards, turtles, and crocodiles.</p>
   <img src="media/reptiles.jpg" alt="Reptiles" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
