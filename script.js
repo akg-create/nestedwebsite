@@ -4,7 +4,7 @@ function resetHomepageView() {
   const subjectButtons = document.querySelectorAll('.subject-btn');
 
   //Hide all topic lists 
-  topicLists.forEach(list => list.style.display = 'none'); 
+  topicsLists.forEach(list => list.style.display = 'none'); 
 
   //Show subject buttons 
   subjectButtons.forEach(btn => btn.style.display = 'inline-block');
