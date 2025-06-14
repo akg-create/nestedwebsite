@@ -11,6 +11,14 @@
   <p>Marine animals include whales, dolphins, sharks, and various species living in ocean habitats.</p>
   <img src="media/marine.jpg" alt="Marine Animals" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
