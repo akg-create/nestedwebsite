@@ -11,7 +11,15 @@
   <p>Black holes are regions of spacetime exhibiting gravitational acceleration so strong that nothing can escape from them.</p>
   <img src="media/blackholes.jpg" alt="Black Holes" style="max-width:100%; height:auto;" />
   <br /><br />
-  <button onclick="window.location.href='index.html'">Back</button>
+  <!-- Back Button -->
+  <button id="back-btn">Back</button>
+
+  <!-- Script to handle back button -->
+  <script>
+    document.getElementById('back-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
 
