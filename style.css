@@ -15,7 +15,7 @@ ul {
 }
 
 .topics {
-  display: none !important; /* Hide topics initially */
+  display: none; /* Hide topics initially */
   margin-top: 5px;
   margin-left: 20px;
 }
