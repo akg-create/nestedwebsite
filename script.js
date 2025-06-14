@@ -1,4 +1,21 @@
+// Function to hide topic menus and show only top-level subjects 
+function resetHomepageView() {
+  const topicsLists = document.querySelectorAll('.topics');
+  const subjectButtons = document.querySelectorAll('.subject-btn');
+
+  //Hide all topic lists 
+  topicLists.forEach(list => list.style.display = 'none'); 
+
+  //Show subject buttons 
+  subjectButtons.forEach(btn => btn.style.display = 'inline-block');
+}
+
+// On page load
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Run reset Logic when homepage loads 
+  resetHomepageView(); 
+  
   const buttons = document.querySelectorAll('.subject-btn');
   const topicsLists = document.querySelectorAll('.topics');
 
